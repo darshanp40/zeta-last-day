@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baajirao</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Roboto Condensed', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            text-align: center;
+            height: 728px;
+            position: relative;
+            background: #000000;
+            padding: 20px;
+            color: #ed3561;
+        }
+
+        .page {
+            height: 728px;
+            text-align: justify;
+            background: #000000;
+        }
+
+        .content {
+            position: absolute;
+            bottom: 0;
+            font-size: 20px;
+            border: 1px solid #ed3561;
+            padding: 20px;
+        }
+
+        .cover {
+            height: 100%;
+            background-color: #000000;
+            background-image: url(./images/dd.jpg);
+            background-size: cover;
+            background-position: 0 -126px;
+        }
+
+        .cover-title {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: #000000bd;
+            color: #ed3561;
+            padding: 20px 10px;
+        }
+
+        .cover-title h1 {
+            margin: 10px;
+        }
+
+        .cover-title sup {
+            font-size: 12px;
+        }
+
+        .sup-text {
+            text-align: right;
+            font-size: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .section-heading {
+            text-align: center;
+            text-transform: uppercase;
+            border: 1px solid #ed3561;
+        }
+
+        .pic {
+            height: 400px;
+            width: 100%;
+            background-color: #000000;
+            overflow: hidden;
+        }
+
+        .bros .pic,
+        .power-puff-girls-and-yogesh .pic {
+            height: auto;
+        }
+
+        .bajirao .pic {
+            height: 528px;
+        }
+
+        .bros-2 .section-heading,
+        .bros-2 .pic,
+        .ppg-2 .section-heading,
+        .ppg-2 .pic {
+            display: none;
+        }
+
+        .page-content {
+            font-size: 18px;
+            border: 1px solid #ed3561;
+            padding: 16px;
+        }
+
+        .pic-image {
+            max-width: 100%;
+            padding: 5px;
+            border: 1px solid #ed3561;
+        }
+
+        .disclaimair {
+            max-width: 640px;
+            margin: 0 auto;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper hidden">
+        <div id="magazine">
+            <div class="cover hard">
+                <div class="cover-title">
+                    <img style="display: none;" src="./images/dd.jpg" alt="">
+                    <h1>Bajirao signing off....</h1>
+                </div>
+            </div>
+            <div class="page">
+                <img src="./images/working.webp" alt="">
+                <div class="content">
+
+                    So much time spent in front of the computer screen, but now all I can remember are the moments
+                    that I spent without it, which includes late night dinners, TT games, the short chai conversations.
+                    Nevertheless, it has been a huge learning experience and I owe a lot what I am today to Zeta and
+                    the people working for it. I will make a few mentions.
+                </div>
+            </div>
+            <div class="page bajirao" id="rest">
+                <div class="pic"><img class="pic-image" src="./images/baajirao.jpg" alt=""></div>
+                <div class="content">
+                    And last but not the least. Thank you to the HR team for keeping us motivated at work. Loved and
+                    enjoyed the '21 days 21 memories' challenge. Thank you to the TA team for hiring me and then make me
+                    hire few talents for Zeta :p. Thank you to the facilities team for providing healthy and proteinated
+                    food at the office.
+                </div>
+            </div>
+            <div class="hard page">
+                <div class="content">
+                    Stay in touch. I will always be available on the following mediums:
+                    <ul>
+                        <li><a href="tel:+919885252623">Contact No:9885252623</a></li>
+                        <li><a href='mailto:darshanp40@gmail.com'>Mailbox: darshanp40@gmail.com</a></li>
+                        <li> <a href="https://www.linkedin.com/in/pawardarshan/" target="_blank">LinkedIn:
+                                pawardarshan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="disclaimair">
+        * Use left and right arrow keys to toggle the pages
+    </p>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="turn.min.js"></script>
+    <script type="text/javascript">
+        $(window).ready(function () {
+            oConfig = [{
+                title: 'Ramki',
+                imageURL: './images/ramki.jpg',
+                content: "The best CTO I have ever come across in my career. I couldn't have asked for a better mentor than you. I am grateful to you for putting me in challenging situations and showing faith in me. I have learnt a lot about architecture, UX and usability of an application from you. Thank you for the support in making me a good engineer and pardon me for my silly doubts"
+            }, {
+                title: 'Dipit',
+                imageURL: './images/dipit.jpg',
+                content: "The picture itself tells about the kind of bonding you had with us. You've been the best manager for me. I am thankful to you for showing faith in me and providing multiple opportunities to excel in my career. You've been a good leader and mentor. I admire your patience with which you listen to the technical things and provide your valuable inputs on it."
+            }, {
+                title: 'Ambuj',
+                imageURL: './images/ambuj.jpg',
+                content: "Apologies for the picture, but this was the only one of yours in my phone. The reason being very simple, that you've been the one who takes pictures of all of us. I admire you for your routine as I also like to start my day early. Thank you for supporting the FE team of Banking SaaS and resolving their problems."
+            }, {
+                title: "Shenoy & Vamsi",
+                imageURL: './images/shenoy.jpg',
+                content: "Shenoy:Your smile itself is sufficient enough to make any big looking problem look trivial. Being the leader of a young and dynamic team, you have played a crucial role in managing it. I hope Aura team grows as the best team under your supervision. <br> Vamsi: Gem of Aura. It was great working with you. Thanks for your instant replies and help. I admire your calmness. I hope I could get that kind of patience."
+            }, {
+                title: "The SaSSy team",
+                imageURL: "./images/team.jpg",
+                content: "I am proud that I could connect and work with so many smart and intelligent brains. Had a lot of fun working with The A-Team. Amit G and Shubham being the cherries on the cake, and Mansi making sure that the cake is baked properly. Mustafa, Lakshmanan and the entire design team being very proactive in resolving doubts related to the design. Anmol, Ritesh, Rushit, Sai and the entire QA team working hard to build the most complex backend for Zeta. <br>I will miss playing TT with Mayank, Puneet Ji and Tanish. Thank you all for the support."
+            }, {
+                title: "SaaSy FE Team",
+                imageURL: './images/feteam.jpg',
+                content: "I am fortunate that I could get such kind of peers who always have a challenging attitude. I will miss the discussions we had over tea. Kudos and all the best to Ankit, Sanyam, Rajarshi, Hemonta and Hussain. I hope to work with you guys again."
+            }, {
+                title: "Bros",
+                imageURL: './images/bros.jpg',
+                content: ""
+            }, {
+                title: "bros-2",
+                imageURL: './images/bros.jpg',
+                content: "I feel proud to have them in my life. There are a lot of things which I've gotten to learn from them not only professionally but also personally. All of them are equally talented and smart. Especially Vishwajeet(aka Baba aka Passbook) and Dharmendra(aka paji) are true inspirations. Only few people know about the amount of effort and hardwork these two guys have put in to build Hercules. I have seen them spending numerous weekends at the office and at each other's place just to make something which can be considered as a benchmark for the other FEs to follow. Kudos to you guys. You guys already are mountain movers for our FE Team at Zeta.<br><br>Vishwajeet: True inspiration for each one of us. The kind of deligence, you show at work is really commendable and wish you a great career ahead.<br><br>Dharmendra: My cult and badminton buddy. I will miss our matches and cult PRs :(. Wish you a great success and bright future.<br><br>Indra:  It was an awesome experience of being a Zeta buddy of yours. You grasped things very quickly and I didn't have to put in much efforts to make you understand about Zeta's FE engineering. You are extremely talented and helpful and I am thankful that you shared a lot of load of mine while working in Aura. All the very best bro."
+            }, {
+                title: "Power puff girls and Yogesh",
+                imageURL: './images/ppg.jpg',
+                content: "You guys have been amazing friends to hang out. I could be a kid when I was with you guys. Thank you for being such awesome friends and yes, I will miss our badminton days and deep conversations over chai. Thank you for being a change in my monotonous life. May God bless you with happiness and wish you all the very best."
+            }]
+            $("#rest").before(createAlbum(oConfig));
+            $('#magazine').turn({
+                display: 'single',
+                page: 1,
+                acceleration: true,
+                width: 600,
+                height: 690,
+                gradients: !$.isTouch,
+                when: {
+                    turned: function (e, page) {}
+                }
+            });
+            $('.wrapper').removeClass('hidden');
+        });
+
+        function createAlbum(oConfig) {
+            var template = '';
+            for (var index = 0; index < oConfig.length; index++) {
+                var element = oConfig[index];
+                template += `<div class="page ${element.title.toLowerCase().split(" ").join("-")}">` +
+                    '<div class="section-heading">' +
+                    '<h2>' + element.title + '</h2>' +
+                    '</div>' +
+                    '<div class="pic">' +
+                    (element.imageURL ? '<img class="pic-image" src="' + element.imageURL + '" alt="" />' + '</div>' :
+                        "") +
+                    (element.content ? '<div class="page-content">' + element.content + '</div>' : "") +
+                    '</div>';
+            }
+            return template;
+        }
+
+        $(window).bind('keydown', function (e) {
+
+            if (e.keyCode == 37)
+                $('#magazine').turn('previous');
+            else if (e.keyCode == 39)
+                $('#magazine').turn('next');
+
+        });
+    </script>
+</body>
+
+</html>
